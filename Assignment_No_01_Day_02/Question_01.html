@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Question no. 01
+        </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>
+            A JavaScript program to display the current day and time.
+        </h1>
+        
+        <script>
+            var today= new Date();
+            var day=today.getDay();
+            var weekname=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            document.write ("Today is : " + weekname[day] + ".<br>" );
+            var hr=today.getHours();
+            var min=today.getMinutes();
+            var sec=today.getSeconds();
+            var suffix= (hr>12)? "PM" : "AM";
+            hr = (hr >= 12)? hr - 12: hr;
+            document.write ("Current time is : " + hr + "  " + suffix + "  :" + min + "  :" + sec + " .");
+            
+        </script>
+         
+    </body>
+</html>

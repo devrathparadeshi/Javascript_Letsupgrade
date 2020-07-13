@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Question no. 03
+        </title>
+    </head>
+    <body>
+        <h1>
+             A JavaScript program to get the current date.
+
+        </h1>
+        <script>
+            var today= new Date();
+            var dd=today.getDate();
+            var mm = today.getMonth()+1;
+            var yyyy= today.getFullYear();
+            document.write("Date in format dd-mm-yyyy.<br>");
+            document.write("Date is " +dd+"-"+mm+"-"+yyyy+"  .<br><br><br>");
+            document.write("Date in format dd/mm/yyyy.<br>");
+            document.write("Date is " +dd+"/"+mm+"/"+yyyy+"  .<br><br><br>");
+            document.write("Date in format mm-dd-yyyy.<br>");
+            document.write("Date is " +mm+"-"+dd+"-"+yyyy+"  .<br><br><br>");
+            document.write("Date in format mm/dd/yyyy.<br>");
+            document.write("Date is " +mm+"/"+dd+"/"+yyyy+"  .<br><br><br>");
+        </script>
+    </body>
+</html>
