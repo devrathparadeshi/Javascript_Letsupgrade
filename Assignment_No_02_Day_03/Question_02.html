@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no. 02</title>
+</head>
+<body>
+   <h1><marquee behavior="Alternate" direction="left" scrollamount="25"> Difference between var lets const:</h1></marquee>
+    <table border="1" height="100%" width="100%" align="center">
+        <tr align= center>
+            <td>
+                Keyword
+            </td>
+            <td>
+                Function vs Block code
+            </td>
+            <td>
+                Redefinable
+            </td>
+        </tr>
+        <tr align= center>
+            <td>
+                Var : JavaScript variables are containers for storing data values.
+            </td>
+            <td>
+                Function Code
+            </td>
+            <td>
+                YES
+            </td>
+        </tr>
+        <tr align= center>
+            <td>
+                Let : Variables declared with the let keyword can have Block Scope.
+            </td>
+            <td>
+                Block Code
+            </td>
+            <td>
+                YES
+            </td>
+        </tr>
+        <tr align= center>
+            <td>
+               Const
+            </td>
+            <td>
+                Block Code
+            </td>
+            <td>
+               No
+            </td>
+        </tr>
+    </table>
+
+    <p>
+        Example for var:<br>
+        var x = 5;
+        var y = 6;
+        var z = x + y;<br>
+        <script>
+        var x = 5;
+        var y = 6;
+        var z = x + y;
+        document.write("Addition is "+z+"<br>");
+        </script>
+        Example for Let:<br>
+        var x = 10;
+        // Here x is 10<br>
+        {<br>
+        let a = 2;<br>
+        // Here x is 2<br>
+        }<br>
+        // Here x is 10<br>
+        <script>
+            var x = 10;
+            // Here x is 10
+            {
+            let a = 2;
+            // Here x is 2
+            }
+            // Here x is 10
+            document.write("Value of a : "+a+ "<br>");
+        </script>
+        Example for Const:<br>
+        var b = 10;
+        // Here b is 10<br>
+        {<br>
+        const f = 2;<br>
+        // Here f is 2<br>
+        }<br>
+        // Here b is 10<br>
+        <script>
+            var b = 10;
+            // Here x is 10
+            {
+            const f = 2;
+            document.write("Value of f : "+f+ "<br>");
+            // Here x is 2
+            }
+            // Here x is 10
+            document.write("Value of f : "+f+ "<br>");
+        </script>
+        
+    </p>
+</body>
+</html>

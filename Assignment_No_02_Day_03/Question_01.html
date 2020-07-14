@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no. 01</title>
+</head>
+<body>
+
+    <h1>
+        Explore and explain the various methods in console function
+    </h1>
+    
+
+    <p>
+        Console function methods:<br>
+        1. console.assert() : The console.assert() method writes a message to the console, but only if an expression evaluates to false.<br>
+        <script>
+            console.assert(2>3,"Its a false");
+            document.write("As in above statement condition is false, the message is display in console tab.<br><br>");
+        </script>
+        2. console.clear() : Clear all messages in the console.<br>
+        <script>
+            console.clear();
+            document.write("<br><br>");
+        </script>
+        3. console.count() : It counts the console messages.<br>
+        <script>
+            console.count("");
+            console.count("Hi its working");
+            console.count();
+            document.write("<br><br>");
+        </script>
+        4.The console.error() method writes an error message to the console.<br>
+        <script>
+            console.error("Its an error");
+            document.write("Error message is shown in console window.<br><br>");
+        </script>
+        5.The console.group() method indicates the start of a message group.<br>
+        <script>
+            console.group();
+            console.log("Hello again, this time inside a group!");
+            console.log("Hello again, this second time inside a group!");
+            console.log("Hello again, this third time inside a group!");
+            console.groupEnd();
+            document.write("All messages are grouped inside one console tag.<br><br>");
+        </script>
+        6.The console.groupCollapsed() method indicates the start of a collapsed message group.<br>
+        <script>
+            console.groupCollapsed();
+            console.log("Hello again, this time inside a group!");
+            console.log("Hello again, this second time inside a group!");
+            console.log("Hello again, this third time inside a group!");
+            console.groupEnd();
+            document.write("All messages are grouped inside one console tag.<br><br>");
+        </script>
+        7.The console.info(), console.log() method writes a message to the console.<br>
+
+        <script>
+            console.info("Display the messages.");
+            console.log("Using log tag.");
+            console.groupEnd();
+            document.write("<br><br>");
+        </script>
+        8.The console.table() method writes a table in the console view.<br>
+        <script>
+            console.table({ firstname : "John", lastname : "Doe" });
+            document.write("<br><br>");
+        </script>
+        9.The console.time() method starts a timer in the console view.<br>
+        <script>
+            console.time("test1");
+            for (i = 0; i < 10; i++) 
+            {
+                document.write("Hi<br>");
+
+            }
+            console.timeEnd("test1");
+            document.write("<br><br>");
+        </script>
+        10.The console.trace() method displays a trace that show how the code ended up at a certain point.<br>
+        <script>
+            console.trace();
+            document.write("<br><br>");
+        </script>
+        11.The console.warn() method writes a warning to the console.<br>
+        <script>
+            console.warn("This is end of the question 01.")
+        </script>
+    </p>
+</body>
+</html>
