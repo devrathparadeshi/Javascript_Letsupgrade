@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no. 02</title>
+</head>
+<body>
+    <h1>
+        Methods in String data-types:
+    </h1>
+    <script>
+        let str1= "This is demo for showing String tags  ";
+        document.write("The string is :    "+str1 + "<br><br>");
+        document.write("1.The charAt() method returns the character at the specified index in a string.<br>");
+        document.write("Example charAt(5) :",str1.charAt(5),"<br><br>");
+        document.write("2.The charCodeAt() method returns the Unicode of the character at the specified index in a string.<br>");
+        document.write("Example charCodeAt(5) :",str1.charCodeAt(5),"<br><br>");
+        document.write("3.The concat() method is used to join two or more strings.<br>");
+        let str2 ="This is another string.";
+        document.write("The second string is :    "+str2 + "<br>");
+        document.write("Example str1.concat(str2) :",str1.concat(str2),"<br><br>");
+        document.write("4.The constructor property returns the string's constructor function:<br><br>");
+        document.write("5.The endsWith() method determines whether a string ends with the characters of a specified string.<br>");
+        document.write("Example endsWith(tags) :",str1.endsWith("tags  "),"<br>");
+        document.write("Example endsWith(demo) :",str1.endsWith("demo"),"<br><br>");
+        document.write("6.The fromCharCode() method converts Unicode values into characters..<br>");
+        let str3=String.fromCharCode(105);
+        document.write("Example fromCharCode(105) :",str3,"<br><br>");
+        document.write("7.The includes() method determines whether a string contains the characters of a specified string.<br>");
+        document.write("Example includes(demo) :",str1.includes("demo"),"<br>");
+        document.write("Example includes(wrong) :",str1.includes("wrong"),"<br><br>");
+        document.write("8.The indexOf() method returns the position of the first occurrence of a specified value in a string.<br>");
+        document.write("Example indexOf(showing) :",str1.indexOf("showing"),"<br><br>");
+        document.write("9.The lastIndexOf() method returns the position of the last occurrence of a specified value in a string.<br>");
+        document.write("Example lastIndexOf(is,1) :",str1.lastIndexOf("is",1),"<br><br>");
+        document.write("10.The length property returns the length of a string (number of characters).<br>");
+        document.write("Example length() :",str1.length,"<br><br>");
+        document.write("11.The localeCompare() method compares two strings in the current locale.<br>");
+        document.write("Example localeCompare() :",str1.localeCompare(str2),"<br><br>");
+        document.write("12.The match() method searches a string for a match against a regular expression, and returns the matches, as an Array object.<br>");
+        document.write("Example match(/ng/g) :",str1.match(/ng/g),"<br><br>");
+        document.write("13.The repeat() method returns a new string with a specified number of copies of the string it was called on.<br>");
+        document.write("Example repeat(4) :",str1.repeat(4),"<br><br>");
+        document.write("14.The replace() method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.<br>");
+        document.write("Example repalce(is,was) :",str1.replace(" is"," was"),"<br><br>");
+        document.write("15.The search() method searches a string for a specified value, and returns the position of the match.<br>");
+        document.write("Example search(is) :",str1.search(" is"),"<br><br>");
+        document.write("16.The slice() method extracts parts of a string and returns the extracted parts in a new string.<br>");
+        document.write("Example slice(2,15) :",str1.slice(2,15 ),"<br><br>");
+        document.write("17.The split() method is used to split a string into an array of substrings, and returns the new array.<br>");
+        document.write("Example split() :",str1.split(" "),"<br><br>");       
+    </script>
+    <h1>
+        Methods in Array data-types:
+    </h1>
+    <script>
+        let ar1=["Hi",2020,"Corona","Bye","Welcome",2021];
+        document.write("The array is:  ",ar1,"<br><br>");
+        document.write("1.The concat() method is used to join two or more arrays.<br>");
+        let ar2=["Vaccine",2020,"NotDefined","Happy",2021];
+        document.write("The array is:  ",ar2,"<br><br>");
+        document.write("1.The concat() method is used to join two or more arrays.<br>");
+        document.write("Example concat() :",ar1.concat(ar2),"<br><br>");
+        document.write("2.The copyWithin() method copies array elements to another position in the array, overwriting the existing values.<br>");
+        document.write("Example copyWithin(2,3) :",ar1.copyWithin(2,3),"<br><br>");
+        document.write("3.The fill() method fills the specified elements in an array with a static value.<br>");
+        document.write("Example fill(CoronaGo) :",ar1.fill("CoronaGo"),"<br><br>");
+        document.write("4.The Array.from() method returns an Array object from any object with a length property or an iterable object.<br>");
+        document.write("Example Array.from(HELLO FRIENDS) :",Array.from("HELLO FRIENDS"),"<br><br>");
+        document.write("5.The indexOf() method searches the array for the specified item, and returns its position.<br>");
+        document.write("Example indexof(Happy) :",ar2.indexOf("Happy"),"<br><br>");
+        document.write("6.The join() method returns the array as a string.<br>");
+        document.write("Example join() :",ar2.join(),"<br><br>");
+        document.write("7.The keys() method returns an Array Iterator object with the keys of an array.<br>");
+        document.write("Example keys() :",ar2.keys(),"<br><br>");
+        document.write("8.The pop() method removes the last element of an array, and returns that element.<br>");
+        document.write("Example pop() :",ar2.pop(),"<br><br>");
+        document.write("9.The push() method adds new items to the end of an array, and returns the new length.<br>");
+        document.write("Example push() :",ar2.push("NEW"),"<br><br>");
+        document.write("10.The reverse() method reverses the order of the elements in an array.<br>");
+        document.write("Example reverse() :",ar2.reverse(),"<br><br>");
+        document.write("11.The shift() method removes the first item of an array.<br>");
+        document.write("Example shift() :",ar2.shift(),"<br><br>");
+        document.write("12.The sort() method sorts the items of an array.<br>");
+        document.write("Example sort() :",ar2.sort(),"<br><br>");
+        document.write("13.The unshift() method adds new items to the beginning of an array, and returns the new length.<br>");
+        document.write("Example unshift() :",ar2.unshift("This","Last"),"     ",ar2,"<br><br>");
+    </script>
+</body>
+</html>
